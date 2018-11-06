@@ -10,27 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.laibao.kotlin</groupId>
-    <artifactId>introduction-to-reactive</artifactId>
+    <artifactId>rxjava-fundamental</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Reactor Core -->
+        <!-- https://mvnrepository.com/artifact/io.reactivex/rxjava -->
         <dependency>
-            <groupId>io.projectreactor</groupId>
-            <artifactId>reactor-core</artifactId>
-            <version>3.2.2.RELEASE</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
-        <dependency>
-            <groupId>io.reactivex.rxjava2</groupId>
+            <groupId>io.reactivex</groupId>
             <artifactId>rxjava</artifactId>
-            <version>2.2.3</version>
-        </dependency>
-        <!-- rxkotlin -->
-        <dependency>
-            <groupId>io.reactivex.rxjava2</groupId>
-            <artifactId>rxkotlin</artifactId>
-            <version>2.3.0</version>
+            <version>1.3.8</version>
         </dependency>
     </dependencies>
 
