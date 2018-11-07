@@ -2,7 +2,6 @@ package com.laibao.rxjava.fundamental.reactiveextensions;
 
 import java.math.BigInteger;
 import java.util.Iterator;
-import java.util.function.Consumer;
 
 /**
  * @author laibao wang
