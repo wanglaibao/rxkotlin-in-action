@@ -1,17 +1,17 @@
 package com.laibao.rxjava.fundamental.observable;
 
 import rx.Observer;
-import rx.subjects.BehaviorSubject;
+import rx.subjects.AsyncSubject;
 
 /**
  * @author laibao wang
  */
-public class BehaviorSubjectExample {
+public class AsyncSubjectExample {
 
     public static void main(String[] args) {
-        BehaviorSubject<String> behaviorSubject = BehaviorSubject.create();
+        AsyncSubject<String> subject = AsyncSubject.create();
 
-        behaviorSubject.subscribe(new Observer<String>() {
+        subject.subscribe(new Observer<String>() {
             @Override
             public void onCompleted() {
                 System.out.println("Observable completed");
@@ -28,6 +28,13 @@ public class BehaviorSubjectExample {
             }
         });
 
-        behaviorSubject.onNext("this is the hello world example");
+        subject.onNext("金戈来了啊111111111111111");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("终于结束了啊");
     }
 }
