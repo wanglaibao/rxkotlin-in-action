@@ -10,7 +10,6 @@
     <modules>
         <module>introduction-to-reactive</module>
         <module>rxjava-fundamental</module>
-        <module>reactive-programming-with-rxJava</module>
     </modules>
     <packaging>pom</packaging>
 
