@@ -13,6 +13,20 @@ public class ObservableExample {
     public static void main(String[] args) {
         List<Tweet> tweetList = Arrays.asList(new Tweet(1,"金戈"),new Tweet(2,"前程"),new Tweet(3,"阿拉丁"));
         Observable<Tweet> observable = Observable.from(tweetList);
+
         observable.subscribe((Tweet tweet) -> System.out.println(tweet.getName()));
+        System.out.println();
+
+        observable.subscribe(
+                (Tweet tweet) -> { System.out.println(tweet.getId()+":"+tweet.getName());},
+                (Throwable t) -> { t.printStackTrace(); }
+        );
+
+        System.out.println();
+        observable.subscribe(
+                (Tweet tweet) -> System.out.println(tweet.getId()+":"+tweet.getName()),
+                (Throwable t) -> t.printStackTrace(),
+                () -> System.out.println("done")
+        );
     }
 }
